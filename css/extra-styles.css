@@ -223,3 +223,5 @@ body {
       background-color: #088e4c; }
     .reveal .slide-background:not([data-background-hash]):nth-child(3n+3) {
       background-image: linear-gradient(to bottom, #9a3e48, #9a3e48), url("../images/backgrounds/yellow-comic-zoom-lines.jpg"); }
+  .reveal .slide-number {
+    text-shadow: none; }
