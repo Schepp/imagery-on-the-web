@@ -32,6 +32,10 @@ body {
   .reveal code {
     padding: 0 10px;
     background-color: #333;
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 0 28px;
+    border-image: url("../images/marker-border-222.png") 9 30 stretch;
     font-family: 'Source Code Pro', monospace;
     font-size: 0.8em;
     text-transform: none;
@@ -41,7 +45,6 @@ body {
     padding: 4px 10px;
     -webkit-filter: none;
             filter: none;
-    text-shadow: none;
     background-clip: padding-box;
     border: 30px solid transparent;
     border-image: url("../images/comic-border.png") 30 30 stretch; }
