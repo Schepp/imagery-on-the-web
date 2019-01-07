@@ -56,8 +56,6 @@ body {
             filter: grayscale(1); }
   .reveal .right {
     margin-left: 33%; }
-  .reveal pre + pre {
-    margin-top: -1em; }
   .reveal section img,
   .reveal section video {
     border: none;
@@ -67,6 +65,13 @@ body {
     .reveal section video[src$=".jpg"] {
       -webkit-filter: drop-shadow(0 0 1px #CCC) drop-shadow(0 0 10px #FFF);
               filter: drop-shadow(0 0 1px #CCC) drop-shadow(0 0 10px #FFF); }
+  .reveal section div[id] {
+    display: inline-block; }
+  .reveal section div[id] img,
+  .reveal section div[id] video {
+    max-width: none;
+    max-height: none;
+    margin: 0 auto; }
   .reveal section iframe:only-child {
     position: absolute;
     top: 0;

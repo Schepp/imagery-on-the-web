@@ -79,10 +79,6 @@ body {
     margin-left: 33%;
   }
 
-  pre + pre {
-    margin-top: -1em;
-  }
-
   section img,
   section video {
     border: none;
@@ -92,6 +88,17 @@ body {
     &[src$=".jpg"] {
       filter: drop-shadow(0 0 1px #CCC) drop-shadow(0 0 10px #FFF);
     }
+  }
+
+  section div[id] {
+    display: inline-block;
+  }
+
+  section div[id] img,
+  section div[id] video {
+    max-width: none;
+    max-height: none;
+    margin: 0 auto;
   }
 
   section iframe:only-child {

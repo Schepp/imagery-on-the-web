@@ -48,6 +48,12 @@
 						 data-notes="^Note:"
 						 data-charset="utf-8">
 				</section>
+        <section data-markdown="markdown/styling.md"
+                 data-separator="^-----\n"
+                 data-vertical="^---\n"
+                 data-notes="^Note:"
+                 data-charset="utf-8">
+        </section>
 			</div>
 
 		</div>
@@ -85,8 +91,9 @@
 					{ src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
+					{ src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'bower_components/reveal.js/plugin/live-coding/live-coding.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
 			});
 
 		</script>
