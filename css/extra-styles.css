@@ -32,6 +32,10 @@ body {
   .reveal code {
     padding: 0 10px;
     background-color: #333;
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 0 28px;
+    border-image: url("../images/marker-border-222.png") 9 30 stretch;
     font-family: 'Source Code Pro', monospace;
     font-size: 0.8em;
     text-transform: none;
@@ -41,7 +45,6 @@ body {
     padding: 4px 10px;
     -webkit-filter: none;
             filter: none;
-    text-shadow: none;
     background-clip: padding-box;
     border: 30px solid transparent;
     border-image: url("../images/comic-border.png") 30 30 stretch; }
@@ -53,8 +56,6 @@ body {
             filter: grayscale(1); }
   .reveal .right {
     margin-left: 33%; }
-  .reveal pre + pre {
-    margin-top: -1em; }
   .reveal section img,
   .reveal section video {
     border: none;
@@ -64,6 +65,13 @@ body {
     .reveal section video[src$=".jpg"] {
       -webkit-filter: drop-shadow(0 0 1px #CCC) drop-shadow(0 0 10px #FFF);
               filter: drop-shadow(0 0 1px #CCC) drop-shadow(0 0 10px #FFF); }
+  .reveal section div[id] {
+    display: inline-block; }
+  .reveal section div[id] img,
+  .reveal section div[id] video {
+    max-width: none;
+    max-height: none;
+    margin: 0 auto; }
   .reveal section iframe:only-child {
     position: absolute;
     top: 0;
@@ -220,3 +228,5 @@ body {
       background-color: #088e4c; }
     .reveal .slide-background:not([data-background-hash]):nth-child(3n+3) {
       background-image: linear-gradient(to bottom, #9a3e48, #9a3e48), url("../images/backgrounds/yellow-comic-zoom-lines.jpg"); }
+  .reveal .slide-number {
+    text-shadow: none; }

@@ -47,6 +47,10 @@ body {
   code {
     padding: 0 10px;
     background-color: #333;
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 0 28px;
+    border-image: url('../images/marker-border-222.png') 9 30 stretch;
     font-family: 'Source Code Pro', monospace;
     font-size: 0.8em;
     text-transform: none;
@@ -57,7 +61,6 @@ body {
     max-height: 90vh;
     padding: 4px 10px;
     filter: none;
-    text-shadow: none;
     background-clip: padding-box;
     border: 30px solid transparent;
     border-image: url('../images/comic-border.png') 30 30 stretch;
@@ -76,10 +79,6 @@ body {
     margin-left: 33%;
   }
 
-  pre + pre {
-    margin-top: -1em;
-  }
-
   section img,
   section video {
     border: none;
@@ -89,6 +88,17 @@ body {
     &[src$=".jpg"] {
       filter: drop-shadow(0 0 1px #CCC) drop-shadow(0 0 10px #FFF);
     }
+  }
+
+  section div[id] {
+    display: inline-block;
+  }
+
+  section div[id] img,
+  section div[id] video {
+    max-width: none;
+    max-height: none;
+    margin: 0 auto;
   }
 
   section iframe:only-child {
@@ -241,5 +251,9 @@ body {
         background-image: linear-gradient(to bottom, #9a3e48, #9a3e48), url('../images/backgrounds/yellow-comic-zoom-lines.jpg');
       }
     }
+  }
+
+  .slide-number {
+    text-shadow: none;
   }
 }

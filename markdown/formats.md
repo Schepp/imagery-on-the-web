@@ -1,9 +1,5 @@
-<!-- .slide: data-background="" data-state="inverted" -->
-
 # Image Formats
 ---
-<!-- .slide: data-background="" data-state="inverted" -->
-
 <iframe width="360" height="560" src="https://squoosh.app" class="iframe-embed"></iframe>
 ---
 | Illustration | | Photo |
