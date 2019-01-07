@@ -23,7 +23,7 @@ A `Save-Data: on` request header signals that the user wants less data to be con
 
 Data Saving Mode can also be detected via JavaScript:
 
-```
+```javascript
 if (
   navigator.connection && 
   navigator.connection.saveData === true

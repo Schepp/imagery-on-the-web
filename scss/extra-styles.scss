@@ -4,19 +4,25 @@ body {
 
 .reveal {
   color: #fff;
+  font-family: 'Bangers', 'Lato', sans-serif;
   font-size: 60px;
+  letter-spacing: 2px;
+  text-shadow: 1px -1px 1px #000, 1px 1px 1px #000, -1px -1px 1px #000, -1px 1px 1px #000;
 
   h1 {
     font-size: 2em;
   }
+
   h2 {
     font-size: 1.5em
   }
+
   h3 {
     padding-bottom: 0.25em;
     font-size: 1.5em;
     text-transform: none;
   }
+
   h4 {
     font-size: 1em;
   }
@@ -24,12 +30,8 @@ body {
   h1, h2, h3, h4, h5, h6, ol, ul, p, table, pre {
     margin-bottom: 2rem;
     color: #fff;
+    font-family: 'Bangers', 'Lato', sans-serif;
     line-height: 1.25;
-
-    html.inverted & {
-      color: #FFF;
-      text-shadow: 1px 1px 2px #000, 1px -1px 2px #000, -1px -1px 2px #000, -1px 1px 2px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 8px rgba(0, 0, 0, .5), 0 0 8px rgba(0, 0, 0, .5), 0 0 8px rgba(0, 0, 0, .5);
-    }
   }
 
   a:not(.image) {
@@ -44,9 +46,11 @@ body {
 
   code {
     padding: 0 10px;
-    background-color: #3F3F3F;
+    background-color: #333;
+    font-family: 'Source Code Pro', monospace;
     font-size: 0.8em;
     text-transform: none;
+    vertical-align: middle;
   }
 
   pre code {
@@ -54,7 +58,9 @@ body {
     padding: 4px 10px;
     filter: none;
     text-shadow: none;
-    box-shadow: inset 0 0 0 2px #666;
+    background-clip: padding-box;
+    border: 30px solid transparent;
+    border-image: url('../images/comic-border.png') 30 30 stretch;
   }
 
   html.faded & .backgrounds {
@@ -220,14 +226,20 @@ body {
   }
 
   .slide-background {
-    &:nth-child(3n+1) {
-      background-color: #1f61a8;
-    }
-    &:nth-child(3n+2) {
-      background-color: #088e4c;
-    }
-    &:nth-child(3n+3) {
-      background-color: #9a3e48;
+    &:not([data-background-hash]) {
+      background-size: cover;
+      background-blend-mode: lighten;
+
+      &:nth-child(3n+1) {
+        background-image: linear-gradient(to bottom, #1f61a8, #1f61a8), url('../images/backgrounds/yellow-comic-zoom-lines.jpg');
+      }
+      &:nth-child(3n+2) {
+        background-image: linear-gradient(to bottom, #088e4c, #088e4c), url('../images/backgrounds/yellow-comic-zoom-lines.jpg');
+        background-color: #088e4c;
+      }
+      &:nth-child(3n+3) {
+        background-image: linear-gradient(to bottom, #9a3e48, #9a3e48), url('../images/backgrounds/yellow-comic-zoom-lines.jpg');
+      }
     }
   }
 }
