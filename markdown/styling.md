@@ -7,7 +7,7 @@ The mysterious gap
   height="400"&gt;</code></pre>
 
 <pre><code class="liveCoding css" data-livecoding-id="css-gap" contenteditable>img{
-  margin: 0 10px;
+  margin: 10px;
 }</code></pre>
 
 <div id="css-gap" style="background: #fff; border: 1px solid #000"></div>
@@ -19,7 +19,7 @@ The mysterious gap
   height="400"&gt;</code></pre>
 
 <pre><code class="liveCoding css" data-livecoding-id="css-fd" contenteditable>img{
-  margin: 0 10px;
+  margin: 0;
 }</code></pre>
 
 <div id="css-fd" style="background: #fff; border: 1px solid #000"></div>
