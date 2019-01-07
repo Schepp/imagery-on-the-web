@@ -1,15 +1,8 @@
 <!-- .slide: data-background="" data-state="inverted" -->
 
-# Image Formats
+# Raster Image Formats
 ---
 <!-- .slide: data-background="" data-state="inverted" -->
-
-<iframe width="360" height="560" src="https://squoosh.app" class="iframe-embed"></iframe>
----
-| Illustration | | Photo |
-| --- | --- | --- |
-| ![Illustration](images/captain-marvel-comic.jpg) | <iframe width="360" height="560" src="https://squoosh.app"></iframe> | ![Safari](images/captain-marvel-movie.jpg) |
-
 
 ## Data Saving Modes & Transform Proxies
 
