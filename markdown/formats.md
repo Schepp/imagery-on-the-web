@@ -15,19 +15,19 @@
 <!-- 
 {
  "data": {
-  "labels": ["SVG","PNG","JPEG","WebP"],
+  "labels": ["SVG","SVGZ","OptiPNG","MozJPEG","WebP"],
   "datasets": [
    {
-    "data": [118,20.5,5.6,10.4],
-    "label": "Filesize for 150 x 200 in KB","backgroundColor":"rgba(75,65,117,1)"
+    "data": [85.6,32.1,4,5.6,10.4],
+    "label": "Filesize for 150x200 in KB","backgroundColor":"rgba(75,65,117,1)"
    },
    {
-    "data": [118,20.5,5.6,10.4],
-    "label": "Filesize for 600 x 800 in KB","backgroundColor":"rgba(21,103,174,1)"
+    "data": [85.6,32.1,17,24.6,43.7],
+    "label": "Filesize for 450x600 in KB","backgroundColor":"rgba(21,103,174,1)"
    },
    {
-    "data": [118,20.5,5.6,10.4],
-    "label": "Filesize for 900 x 1200 in KB","backgroundColor":"rgba(200,56,44,1)"
+    "data": [85.6,32.1,38.5,62.5,100],
+    "label": "Filesize for 900x1200 in KB","backgroundColor":"rgba(200,56,44,1)"
    }
   ]
  }, 

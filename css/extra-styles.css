@@ -22,7 +22,8 @@ body {
     margin-bottom: 2rem;
     color: #fff;
     font-family: 'Bangers', 'Lato', sans-serif;
-    line-height: 1.25; }
+    line-height: 1.25;
+    text-shadow: inherit; }
   .reveal a:not(.image) {
     color: rgba(255, 255, 255, 0.8); }
   .reveal pre {
