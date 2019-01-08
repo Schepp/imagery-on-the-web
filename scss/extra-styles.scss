@@ -90,10 +90,6 @@ body {
     border: none;
     background: transparent;
     box-shadow: none;
-
-    &[src$=".jpg"] {
-      filter: drop-shadow(0 0 1px #CCC) drop-shadow(0 0 10px #FFF);
-    }
   }
 
   section div[id] {
@@ -137,20 +133,6 @@ body {
       white-space: nowrap;
       text-align: center;
       border-bottom: 0.05em dotted currentcolor;
-
-      img {
-        margin: 0;
-        padding: 10px;
-        border: 1px solid #000;
-        background: #fff;
-        box-shadow: none;
-
-        &[src$="svg"] {
-          padding: 0;
-          background: transparent;
-          border: none;
-        }
-      }
     }
   }
 
@@ -209,20 +191,23 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    max-width: 100%;
 
     @for $i from 1 to 10 {
       > *:first-child:nth-last-child(#{$i}) {
         &,
         & ~ * {
-          flex: 0 0 calc(100% / #{$i});
-          width: calc(100% / #{$i});
+          flex: 1 1 calc(100% / #{$i});
+          min-width: 1px;
         }
       }
     }
 
     > iframe,
     > img {
+      width: auto;
       height: auto;
+      margin: 0 5px;
     }
   }
 
@@ -246,5 +231,83 @@ body {
 
   .slide-number {
     text-shadow: none;
+  }
+
+  .image-grid-headline {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-200%);
+  }
+
+  .image-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    font-size: 0;
+
+    .image {
+      display: inline-block;
+      min-height: 400px;
+      width: 50%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &:nth-child(1) {
+        background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/re7-chris-large.jpg");
+      }
+
+      &:nth-child(2) {
+        background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/bioshock-large.jpg");
+      }
+
+      &:nth-child(3) {
+        background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/dishonored-large.jpg");
+      }
+    }
+
+    @supports (display: grid) {
+      .image {
+        width: auto;
+        min-height: 0;
+
+        &:nth-child(1) {
+          grid-column: 1 / span 1;
+          grid-row: 1 / 50;
+          clip-path: polygon(0 0, 0 86%, 90% 81%, 100% 0);
+          margin-top: 0;
+        }
+
+        &:nth-child(2) {
+          grid-column: 2 / span 1;
+          grid-row: 1 / 50;
+          clip-path: polygon(13% 0, 4% 84%, 100% 100%, 100% 0%);
+          margin-top: 0;
+          margin-left: -15%;
+          margin-bottom: 18px;
+        }
+
+        &:nth-child(3) {
+          grid-column: 1 / span 2;
+          grid-row: 50 / 100;
+          clip-path: polygon(45% 0, 100% 13%, 100% 100%, 0 100%, 0 4.5%);
+          margin-top: -95px;
+        }
+      }
+    }
+  }
+
+  #format-mjpeg {
+    img {
+      vertical-align: bottom;
+    }
   }
 }

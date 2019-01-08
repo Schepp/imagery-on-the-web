@@ -1,1 +1,2 @@
 https://www.freepik.com/free-vector/yellow-comic-zoom-lines-background_2930929.htm#term=comic&page=1&position=4
+https://codemyui.com/comic-book-style-uneven-grid-css/?relatedposts_hit=1&relatedposts_origin=24905&relatedposts_position=0
