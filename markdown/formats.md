@@ -35,3 +35,61 @@
 }
 -->
 </canvas>
+---
+## Illustration
+
+<img src="images/captain-marvel-comic.png" width="300" height="400" class="comic-border" style="position: absolute; right: 0; top: -100px">
+
+<canvas data-chart="bar">
+<!-- 
+{
+ "data": {
+  "labels": ["SVG","SVGZ","OptiPNG","MozJPEG","WebP"],
+  "datasets": [
+   {
+    "data": [2410.6,840.4,64.1,8.2,8.5],
+    "label": "Filesize for 150x200 in KB","backgroundColor":"rgba(75,65,117,1)"
+   },
+   {
+    "data": [2410.6,840.4,510,55.8,55.7],
+    "label": "Filesize for 450x600 in KB","backgroundColor":"rgba(21,103,174,1)"
+   },
+   {
+    "data": [2410.6,840.4,1710,166,139],
+    "label": "Filesize for 900x1200 in KB","backgroundColor":"rgba(200,56,44,1)"
+   }
+  ]
+ }, 
+ "options": { "responsive": "true" }
+}
+-->
+</canvas>
+---
+## Photo
+
+<img src="images/captain-marvel-movie.png" width="300" height="400" class="comic-border" style="position: absolute; right: 0; top: -100px">
+
+<canvas data-chart="bar">
+<!-- 
+{
+ "data": {
+  "labels": ["SVG","SVGZ","OptiPNG","MozJPEG","WebP"],
+  "datasets": [
+   {
+    "data": [2410.6,840.4,64.1,8.2,8.5],
+    "label": "Filesize for 150x200 in KB","backgroundColor":"rgba(75,65,117,1)"
+   },
+   {
+    "data": [2410.6,840.4,510,55.8,55.7],
+    "label": "Filesize for 450x600 in KB","backgroundColor":"rgba(21,103,174,1)"
+   },
+   {
+    "data": [2410.6,840.4,1710,166,139],
+    "label": "Filesize for 900x1200 in KB","backgroundColor":"rgba(200,56,44,1)"
+   }
+  ]
+ }, 
+ "options": { "responsive": "true" }
+}
+-->
+</canvas>
