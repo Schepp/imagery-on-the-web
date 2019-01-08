@@ -7,14 +7,12 @@
   <div class="image"></div>
 </div>
 ---
-## Still Images Format Battle 
-
-Handdrawn vs. Illustration vs. Photo
+## Format Battle: Handdrawn vs. Illustration vs. Photo
  
 <div class="flex-row">
-   <img src="images/captain-marvel-drawing.png" class="comic-border" width="300" height="400">
-   <img src="images/captain-marvel-comic.png" class="comic-border" width="300" height="400">
-   <img src="images/captain-marvel-movie.png" class="comic-border" width="300" height="400">
+   <div><img src="images/captain-marvel-drawing.png" class="comic-border"></div>
+   <div><img src="images/captain-marvel-comic.png" class="comic-border"></div>
+   <div><img src="images/captain-marvel-movie.png" class="comic-border"></div>
 </div>
 ---
 ## Handdrawn

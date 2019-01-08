@@ -196,9 +196,10 @@ body {
           -ms-flex: 1 1 calc(100% / 9);
               flex: 1 1 calc(100% / 9);
       min-width: 1px; }
-    .reveal .flex-row > iframe,
-    .reveal .flex-row > img {
+    .reveal .flex-row iframe,
+    .reveal .flex-row img {
       width: auto;
+      max-width: 100%;
       height: auto;
       margin: 0 5px; }
   .reveal .slide-background:not([data-background-hash]) {
