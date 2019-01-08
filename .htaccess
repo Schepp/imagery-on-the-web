@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteRule ^explosion\.mjpeg$ images/explosion/mjpeg/explosion.mjpeg.php [NC,L]
+</IfModule>
+
