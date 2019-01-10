@@ -161,6 +161,33 @@
     });
 
 </script>
+<script>
+  document.addEventListener('mousemove', function(e) {
+    var obj = document.getElementById('css-image-focus-setter');
 
+    if (!obj) return;
+
+    var obj_left = 0;
+    var obj_top = 0;
+    var obj_width = obj.offsetWidth;
+    var obj_height = obj.offsetHeight;
+    var xpos;
+    var ypos;
+    while (obj.offsetParent)
+    {
+      obj_left += obj.offsetLeft;
+      obj_top += obj.offsetTop;
+      obj = obj.offsetParent;
+    }
+    xpos = e.pageX;
+    ypos = e.pageY;
+    xpos -= obj_left;
+    ypos -= obj_top;
+    var xpercent = Math.round((xpos / obj_width) * 100);
+    var ypercent = Math.round((ypos / obj_height) * 100);
+
+    document.getElementById('css-image-focus-setter').setAttribute('data-coordinates', xpercent + '% ' + ypercent +  '%');
+  });
+</script>
 </body>
 </html>

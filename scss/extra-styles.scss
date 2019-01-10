@@ -68,6 +68,11 @@ body {
     border-image: url('../images/comic-border.png') 30 30 stretch;
   }
 
+  pre code {
+    background-color: #111;
+    font-size: 0.65em !important;
+  }
+
   iframe {
     background-color: #fff;
   }
@@ -184,6 +189,13 @@ body {
       left: 102%;
       content: close-quote;
       vertical-align: bottom;
+    }
+  }
+
+  .inline-row {
+    > div, img {
+      display: inline-block;
+      vertical-align: top;
     }
   }
 
@@ -310,5 +322,10 @@ body {
     img {
       vertical-align: bottom;
     }
+  }
+
+  .resizable {
+    resize: both;
+    overflow: auto;
   }
 }

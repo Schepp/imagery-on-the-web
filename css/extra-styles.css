@@ -50,6 +50,9 @@ body {
     background-clip: padding-box;
     border: 30px solid transparent;
     border-image: url("../images/comic-border.png") 30 30 stretch; }
+  .reveal pre code {
+    background-color: #111;
+    font-size: 0.65em !important; }
   .reveal iframe {
     background-color: #fff; }
   html.faded .reveal .backgrounds {
@@ -131,6 +134,9 @@ body {
       left: 102%;
       content: close-quote;
       vertical-align: bottom; }
+  .reveal .inline-row > div, .reveal .inline-row img {
+    display: inline-block;
+    vertical-align: top; }
   .reveal .flex-row {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -271,3 +277,6 @@ body {
           margin-top: -95px; } }
   .reveal #format-mjpeg img {
     vertical-align: bottom; }
+  .reveal .resizable {
+    resize: both;
+    overflow: auto; }

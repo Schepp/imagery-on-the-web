@@ -1,0 +1,5 @@
+<div class="flex">
+  <div style="background-image: url('images/thor.jpg')"></div>
+  <div style="background-image: url('images/iron-man.jpg')"></div>
+  <div style="background-image: url('images/hawkeye.jpg')"></div>
+</div>
