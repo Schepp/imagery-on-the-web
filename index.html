@@ -162,37 +162,49 @@
 
 </script>
 <script>
-    Reveal.addEventListener( 'ready', function() {
-        const obj = document.getElementById('css-image-focus-setter');
-        const handleMouse = (e) => {
-            const rects = obj.getBoundingClientRect();
-            const objWidth = rects.width * Reveal.getScale();
-            const objHeight = rects.height * Reveal.getScale();
-            const xpos = e.offsetX;
-            const ypos = e.offsetY;
-            const xpercent = Math.round((xpos / objWidth) * 100);
-            const ypercent = Math.round((ypos / objHeight) * 100);
-            const position = xpercent + '% ' + ypercent +  '%';
-
-            document.getElementById('css-image-focus-setter').setAttribute('data-coordinates', position);
-
-            if (e.type === 'click') {
-                const editor = document.querySelector('.css[data-livecoding-id="css-image-focus"]');
-
-                editor.textContent = 'div {\n' +
+    Reveal.addEventListener( 'ready', () => {
+        const map = {
+            'css-image-focus-setter': 'div {\n' +
                 '  background-image: url(\'images/thor.jpg\');\n' +
                 '  background-size: cover;\n' +
-                '  background-position: ' + position + ';\n' +
-                '}';
-
-                const keyupEvent = document.createEvent('HTMLEvents');
-                keyupEvent.initEvent('keyup', false, true);
-                editor.dispatchEvent(keyupEvent);
-            }
+                '  background-position: %POSITION%;\n' +
+                '}',
+            'css-image-focus-2-setter': 'div {\n' +
+                '  background-image: -webkit-image-set(url(\'images/thor.jpg\') 1x, \n' +
+                '  url(\'images/thor2x.jpg\') 2x);\n' +
+                '  background-size: cover;\n' +
+                '  background-position: %POSITION%;\n' +
+                '}',
         };
 
-        obj.addEventListener('mousemove', handleMouse);
-        obj.addEventListener('click', handleMouse);
+        Object.keys(map).forEach((id) => {
+            const obj = document.getElementById(id);
+            const handleMouse = (e) => {
+                const rects = obj.getBoundingClientRect();
+                const objWidth = rects.width * Reveal.getScale();
+                const objHeight = rects.height * Reveal.getScale();
+                const xpos = e.offsetX;
+                const ypos = e.offsetY;
+                const xpercent = Math.round((xpos / objWidth) * 100);
+                const ypercent = Math.round((ypos / objHeight) * 100);
+                const position = xpercent + '% ' + ypercent +  '%';
+
+                obj.setAttribute('data-coordinates', position);
+
+                if (e.type === 'click') {
+                    const editor = document.querySelector('.css[data-livecoding-id="' + id.replace('-setter', '') + '"]');
+
+                    editor.textContent = map[id].replace('%POSITION%', position);
+
+                    const keyupEvent = document.createEvent('HTMLEvents');
+                    keyupEvent.initEvent('keyup', false, true);
+                    editor.dispatchEvent(keyupEvent);
+                }
+            };
+
+            obj.addEventListener('mousemove', handleMouse);
+            obj.addEventListener('click', handleMouse);
+        });
     });
 </script>
 </body>

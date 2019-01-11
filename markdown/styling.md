@@ -39,7 +39,7 @@ Make images fit [⚡](snippets/replace-imgs-with-divs.txt)
 
 <div id="css-background-size" style="background: #fff; border: 1px solid #000"></div>
 ---
-Make images fit [⚡](snippets/replace-imgs-with-divs.txt)
+Art direction via image focus
 
 <style>
 #css-image-focus {
@@ -74,7 +74,7 @@ Make images fit [⚡](snippets/replace-imgs-with-divs.txt)
 }
 </style>
 
-<pre><code class="liveCoding xml" data-livecoding-id="css-image-focus">&lt;div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="liveCoding xml" data-livecoding-id="css-image-focus" contenteditable>&lt;div&gt;&lt;/div&gt;</code></pre>
 
 <pre><code class="liveCoding css" data-livecoding-id="css-image-focus" contenteditable>div {
   background-image: url('images/thor.jpg');
@@ -84,6 +84,52 @@ Make images fit [⚡](snippets/replace-imgs-with-divs.txt)
 <div class="inline-row">
   <div id="css-image-focus" class="resizable"></div>
   <div id="css-image-focus-setter" data-coordinates="0 0">
+    <img src="images/thor.jpg" width="500" height="333">
+  </div>
+</div>
+---
+Art direction for Retina
+
+<style>
+#css-image-focus-2 {
+  width: 30vw;
+  height: 40vh;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+#css-image-focus-2 \> * {
+  width: 100%;
+  height: 100%;
+}
+
+#css-image-focus-2-setter {
+  position: relative;
+  cursor: crosshair;
+}
+
+#css-image-focus-2-setter::after {
+  content: attr(data-coordinates);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  padding: 10px;
+  background-color: rgba(0,0,0,.7);
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.3;
+}
+</style>
+
+<pre><code class="liveCoding xml" data-livecoding-id="css-image-focus-2" contenteditable>&lt;img srcset="images/thor.jpg 1x, images/thor2x.jpg 2x"&gt;</code></pre>
+
+<pre><code class="liveCoding css" data-livecoding-id="css-image-focus-2" contenteditable></code></pre>
+
+<div class="inline-row">
+  <div id="css-image-focus-2" class="resizable"></div>
+  <div id="css-image-focus-2-setter" data-coordinates="0 0">
     <img src="images/thor.jpg" width="500" height="333">
   </div>
 </div>
