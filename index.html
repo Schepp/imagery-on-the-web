@@ -175,6 +175,10 @@
                 '  background-size: cover;\n' +
                 '  background-position: %POSITION%;\n' +
                 '}',
+            'css-image-focus-3-setter': 'picture > img {\n' +
+                '  object-fit: cover;\n' +
+                '  object-position: %POSITION%;\n' +
+                '}',
         };
 
         Object.keys(map).forEach((id) => {
@@ -199,6 +203,10 @@
                     const keyupEvent = document.createEvent('HTMLEvents');
                     keyupEvent.initEvent('keyup', false, true);
                     editor.dispatchEvent(keyupEvent);
+
+                    const focusoutEvent = document.createEvent('HTMLEvents');
+                    focusoutEvent.initEvent('focusout', false, true);
+                    editor.dispatchEvent(focusoutEvent);
                 }
             };
 

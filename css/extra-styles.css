@@ -50,9 +50,13 @@ body {
     background-clip: padding-box;
     border: 30px solid transparent;
     border-image: url("../images/comic-border.png") 30 30 stretch; }
+  .reveal pre + pre {
+    margin-top: -.8rem; }
   .reveal pre code {
     background-color: #111;
     font-size: 0.65em !important; }
+    .reveal pre code::-webkit-scrollbar {
+      display: none; }
   .reveal iframe {
     background-color: #fff; }
   html.faded .reveal .backgrounds {

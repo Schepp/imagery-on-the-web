@@ -68,9 +68,17 @@ body {
     border-image: url('../images/comic-border.png') 30 30 stretch;
   }
 
+  pre + pre {
+    margin-top: -.8rem;
+  }
+
   pre code {
     background-color: #111;
     font-size: 0.65em !important;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   iframe {

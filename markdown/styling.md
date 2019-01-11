@@ -125,11 +125,62 @@ Art direction for Retina
 
 <pre><code class="liveCoding xml" data-livecoding-id="css-image-focus-2" contenteditable>&lt;img srcset="images/thor.jpg 1x, images/thor2x.jpg 2x"&gt;</code></pre>
 
-<pre><code class="liveCoding css" data-livecoding-id="css-image-focus-2" contenteditable></code></pre>
+<pre><code class="liveCoding css" data-livecoding-id="css-image-focus-2" contenteditable>🤔</code></pre>
 
 <div class="inline-row">
   <div id="css-image-focus-2" class="resizable"></div>
   <div id="css-image-focus-2-setter" data-coordinates="0 0">
+    <img src="images/thor.jpg" width="500" height="333">
+  </div>
+</div>
+---
+Art direction for Responsive Images
+
+<style>
+#css-image-focus-3 {
+  width: 30vw;
+  height: 40vh;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+#css-image-focus-3 picture,
+#css-image-focus-3 img {
+  width: 100%;
+  height: 100%;
+}
+
+#css-image-focus-3-setter {
+  position: relative;
+  cursor: crosshair;
+}
+
+#css-image-focus-3-setter::after {
+  content: attr(data-coordinates);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  padding: 10px;
+  background-color: rgba(0,0,0,.7);
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.3;
+}
+</style>
+
+<pre><code class="liveCoding xml" data-livecoding-id="css-image-focus-3" contenteditable>&lt;picture&gt;
+  &lt;source type="image/webp" srcset="images/thor.webp 1x, images/thor2x.webp 2x"&gt;
+  &lt;source type="image/jpg" srcset="images/thor.jpg 1x, images/thor2x.jpg 2x"&gt;
+  &lt;img src="images/thor.jpg"&gt;
+&lt;/picture&gt;</code></pre>
+
+<pre><code class="liveCoding css" data-livecoding-id="css-image-focus-3" contenteditable></code></pre>
+
+<div class="inline-row">
+  <div id="css-image-focus-3" class="resizable"></div>
+  <div id="css-image-focus-3-setter" data-coordinates="0 0">
     <img src="images/thor.jpg" width="500" height="333">
   </div>
 </div>
