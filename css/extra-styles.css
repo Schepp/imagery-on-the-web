@@ -284,3 +284,6 @@ body {
   .reveal .resizable {
     resize: both;
     overflow: auto; }
+  .reveal #css-background-position div::before,
+  .reveal #css-background-position div::after {
+    content: ''; }

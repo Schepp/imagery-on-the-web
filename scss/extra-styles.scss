@@ -336,4 +336,9 @@ body {
     resize: both;
     overflow: auto;
   }
+
+  #css-background-position div::before,
+  #css-background-position div::after {
+    content: '';
+  }
 }

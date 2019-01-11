@@ -6,11 +6,65 @@ The mysterious gap
   width="300" 
   height="400"&gt;</code></pre>
 
-<pre><code class="liveCoding css" data-livecoding-id="css-gap" contenteditable>img{
+<pre><code class="liveCoding css" data-livecoding-id="css-gap" contenteditable>img {
   margin: 10px;
 }</code></pre>
 
 <div id="css-gap" style="background: #fff; border: 1px solid #000"></div>
+---
+Positioning backgrounds
+
+<style>
+#css-background-position div {
+position: relative;
+width: 100%;
+height: 100%;
+background-size: 50% 50%;
+}
+
+#css-background-position div::before,
+#css-background-position div::after {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: linear-gradient(to bottom, black, black);
+background-repeat: no-repeat;
+background-position: inherit;
+}
+
+#css-background-position div::before {
+background-size: 1px 100%;
+}
+
+#css-background-position div::after {
+background-size: 100% 1px;
+}
+</style>
+
+<pre><code class="liveCoding css" data-livecoding-id="css-background-position" contenteditable>div {
+  background-image: url('images/transparent-red.png');
+  background-repeat: no-repeat;
+}</code></pre>
+
+<div id="css-background-position" style="width: 400px; height: 400px; background: #fff; border: 1px solid #000"><div></div></div>
+---
+Generating backgrounds
+
+<style>
+#css-background-gradients div {
+width: 100%;
+height: 100%;
+}
+</style>
+
+<pre><code class="liveCoding css" data-livecoding-id="css-background-gradients" contenteditable>div {
+}</code></pre>
+
+<div id="css-background-gradients" style="width: 400px; height: 400px; background: #fff; border: 1px solid #000"><div></div></div>
 ---
 Make images fit [⚡](snippets/replace-imgs-with-divs.txt)
 
