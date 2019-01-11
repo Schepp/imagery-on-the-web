@@ -162,32 +162,38 @@
 
 </script>
 <script>
-  document.addEventListener('mousemove', function(e) {
-    var obj = document.getElementById('css-image-focus-setter');
+    Reveal.addEventListener( 'ready', function() {
+        const obj = document.getElementById('css-image-focus-setter');
+        const handleMouse = (e) => {
+            const rects = obj.getBoundingClientRect();
+            const objWidth = rects.width * Reveal.getScale();
+            const objHeight = rects.height * Reveal.getScale();
+            const xpos = e.offsetX;
+            const ypos = e.offsetY;
+            const xpercent = Math.round((xpos / objWidth) * 100);
+            const ypercent = Math.round((ypos / objHeight) * 100);
+            const position = xpercent + '% ' + ypercent +  '%';
 
-    if (!obj) return;
+            document.getElementById('css-image-focus-setter').setAttribute('data-coordinates', position);
 
-    var obj_left = 0;
-    var obj_top = 0;
-    var obj_width = obj.offsetWidth;
-    var obj_height = obj.offsetHeight;
-    var xpos;
-    var ypos;
-    while (obj.offsetParent)
-    {
-      obj_left += obj.offsetLeft;
-      obj_top += obj.offsetTop;
-      obj = obj.offsetParent;
-    }
-    xpos = e.pageX;
-    ypos = e.pageY;
-    xpos -= obj_left;
-    ypos -= obj_top;
-    var xpercent = Math.round((xpos / obj_width) * 100);
-    var ypercent = Math.round((ypos / obj_height) * 100);
+            if (e.type === 'click') {
+                const editor = document.querySelector('.css[data-livecoding-id="css-image-focus"]');
 
-    document.getElementById('css-image-focus-setter').setAttribute('data-coordinates', xpercent + '% ' + ypercent +  '%');
-  });
+                editor.textContent = 'div {\n' +
+                '  background-image: url(\'images/thor.jpg\');\n' +
+                '  background-size: cover;\n' +
+                '  background-position: ' + position + ';\n' +
+                '}';
+
+                const keyupEvent = document.createEvent('HTMLEvents');
+                keyupEvent.initEvent('keyup', false, true);
+                editor.dispatchEvent(keyupEvent);
+            }
+        };
+
+        obj.addEventListener('mousemove', handleMouse);
+        obj.addEventListener('click', handleMouse);
+    });
 </script>
 </body>
 </html>

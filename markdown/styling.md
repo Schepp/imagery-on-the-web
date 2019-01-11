@@ -57,6 +57,7 @@ Make images fit [⚡](snippets/replace-imgs-with-divs.txt)
 
 #css-image-focus-setter {
   position: relative;
+  cursor: crosshair;
 }
 
 #css-image-focus-setter::after {
