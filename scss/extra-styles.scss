@@ -1,3 +1,19 @@
+@keyframes chart-open {
+  from {
+    --multiply: 0;
+  }
+  20% {
+    --multiply: 1;
+  }
+  to {
+    --multiply: 1;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #000;
 }
@@ -60,7 +76,7 @@ body {
 
   iframe,
   pre code {
-    max-height: 90vh;
+    max-height: 90%;
     padding: 4px 10px;
     filter: none;
     background-clip: padding-box;
@@ -68,13 +84,13 @@ body {
     border-image: url('../images/comic-border.png') 30 30 stretch;
   }
 
-  pre + pre {
-    margin-top: -.8rem;
+  pre {
+    margin-top: -1rem !important;
   }
 
   pre code {
     background-color: #111;
-    font-size: 0.65em !important;
+    font-size: 0.6em !important;
 
     &::-webkit-scrollbar {
       display: none;
@@ -111,7 +127,7 @@ body {
 
   section div[id] img,
   section div[id] video {
-    max-width: none;
+    max-width: 100%;
     max-height: none;
     margin: 0 auto;
   }
@@ -201,7 +217,7 @@ body {
   }
 
   .inline-row {
-    > div, img {
+    > div, img, pre {
       display: inline-block;
       vertical-align: top;
     }
@@ -212,6 +228,11 @@ body {
     flex-direction: row;
     align-items: flex-start;
     max-width: 100%;
+
+    > * {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
 
     @for $i from 1 to 10 {
       > *:first-child:nth-last-child(#{$i}) {
@@ -340,5 +361,17 @@ body {
   #css-background-position div::before,
   #css-background-position div::after {
     content: '';
+  }
+
+  #css-animated-backgrounds div,
+  #css-masks div {
+    animation-duration: 5000ms !important;
+    animation-play-state: running;
+    animation-fill-mode: both;
+  }
+
+  .future #css-animated-backgrounds div,
+  .future #css-masks div {
+    animation-play-state: paused;
   }
 }

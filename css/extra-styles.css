@@ -1,4 +1,22 @@
 @charset "UTF-8";
+@-webkit-keyframes chart-open {
+  from {
+    --multiply: 0; }
+  20% {
+    --multiply: 1; }
+  to {
+    --multiply: 1; } }
+@keyframes chart-open {
+  from {
+    --multiply: 0; }
+  20% {
+    --multiply: 1; }
+  to {
+    --multiply: 1; } }
+
+* {
+  box-sizing: border-box; }
+
 body {
   background: #000; }
 
@@ -43,18 +61,18 @@ body {
     vertical-align: middle; }
   .reveal iframe,
   .reveal pre code {
-    max-height: 90vh;
+    max-height: 90%;
     padding: 4px 10px;
     -webkit-filter: none;
             filter: none;
     background-clip: padding-box;
     border: 30px solid transparent;
     border-image: url("../images/comic-border.png") 30 30 stretch; }
-  .reveal pre + pre {
-    margin-top: -.8rem; }
+  .reveal pre {
+    margin-top: -1rem !important; }
   .reveal pre code {
     background-color: #111;
-    font-size: 0.65em !important; }
+    font-size: 0.6em !important; }
     .reveal pre code::-webkit-scrollbar {
       display: none; }
   .reveal iframe {
@@ -76,7 +94,7 @@ body {
     display: inline-block; }
   .reveal section div[id] img,
   .reveal section div[id] video {
-    max-width: none;
+    max-width: 100%;
     max-height: none;
     margin: 0 auto; }
   .reveal li {
@@ -138,7 +156,7 @@ body {
       left: 102%;
       content: close-quote;
       vertical-align: bottom; }
-  .reveal .inline-row > div, .reveal .inline-row img {
+  .reveal .inline-row > div, .reveal .inline-row img, .reveal .inline-row pre {
     display: inline-block;
     vertical-align: top; }
   .reveal .flex-row {
@@ -152,6 +170,9 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
     max-width: 100%; }
+    .reveal .flex-row > * {
+      margin-left: 10px;
+      margin-right: 10px; }
     .reveal .flex-row > *:first-child:nth-last-child(1),
     .reveal .flex-row > *:first-child:nth-last-child(1) ~ * {
       -webkit-flex: 1 1 calc(100% / 1);
@@ -287,3 +308,15 @@ body {
   .reveal #css-background-position div::before,
   .reveal #css-background-position div::after {
     content: ''; }
+  .reveal #css-animated-backgrounds div,
+  .reveal #css-masks div {
+    -webkit-animation-duration: 5000ms !important;
+            animation-duration: 5000ms !important;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; }
+  .reveal .future #css-animated-backgrounds div,
+  .reveal .future #css-masks div {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused; }

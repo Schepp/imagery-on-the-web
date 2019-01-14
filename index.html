@@ -73,7 +73,7 @@
         controls: true,
         progress: true,
         history: true,
-        center: true,
+        center: false,
         slideNumber: true,
 
         theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
@@ -213,6 +213,13 @@
             obj.addEventListener('mousemove', handleMouse);
             obj.addEventListener('click', handleMouse);
         });
+    });
+
+    window.CSS.registerProperty({
+        name: '--multiply',
+        syntax: '<number>',
+        inherits: false,
+        initialValue: '0'
     });
 </script>
 </body>

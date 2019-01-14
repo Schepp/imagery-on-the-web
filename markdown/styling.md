@@ -1,6 +1,6 @@
 # Styling images & styling with Images
 ---
-The mysterious gap
+## The mysterious gap
 
 <pre><code class="liveCoding xml" data-livecoding-id="css-gap" contenteditable>&lt;img src="images/captain-marvel-comic.png" 
   width="300" 
@@ -12,7 +12,26 @@ The mysterious gap
 
 <div id="css-gap" style="background: #fff; border: 1px solid #000"></div>
 ---
-Positioning backgrounds
+## Styling broken images [⚡](snippets/broken-image-styling.txt)
+
+<style>
+#css-broken-image img { vertical-align: bottom; }
+</style>
+
+<div class="flex-row">
+<pre><code class="liveCoding css" data-livecoding-id="css-broken-image" contenteditable>img {
+}</code></pre>
+
+<div>
+<pre><code class="liveCoding xml" data-livecoding-id="css-broken-image" contenteditable>&lt;img src="images/iron-man.jpg"
+alt="Iron Man energizing up for battle"&gt;</code></pre>
+
+<div id="css-broken-image" style="width: 800px; padding: 10px; background: #fff; border: 1px solid #000; text-shadow: none; font-size: 30px; line-height: 1.3; color: #000"></div>
+</div>
+</div>
+</div>
+---
+## Positioning backgrounds
 
 <style>
 #css-background-position div {
@@ -52,7 +71,7 @@ background-size: 100% 1px;
 
 <div id="css-background-position" style="width: 400px; height: 400px; background: #fff; border: 1px solid #000"><div></div></div>
 ---
-Generating backgrounds
+## Generating backgrounds
 
 <style>
 #css-background-gradients div {
@@ -64,7 +83,87 @@ height: 100%;
 <pre><code class="liveCoding css" data-livecoding-id="css-background-gradients" contenteditable>div {
 }</code></pre>
 
-<div id="css-background-gradients" style="width: 400px; height: 400px; background: #fff; border: 1px solid #000"><div></div></div>
+<div id="css-background-gradients" style="width: 400px; height: 400px; padding: 10px; background: #fff; border: 1px solid #000"><div></div></div>
+---
+## Animating gradients
+
+<style>
+#css-animated-backgrounds div {
+width: 100%;
+height: 100%;
+}
+</style>
+
+<div class="flex-row" style="width:78%">
+
+<pre><code>CSS.registerProperty({
+  name: '--multiply',
+  syntax: '<number>',
+  inherits: false,
+  initialValue: '0'
+});</code></pre>
+
+<pre><code>@keyframes chart-open {
+  from { 
+    --multiply: 0; }
+  to   { 
+    --multiply: 1; }
+}</code></pre>
+
+</div>
+
+<pre><code class="liveCoding css" data-livecoding-id="css-animated-backgrounds" contenteditable>div {
+  animation: chart-open 1000ms infinite;
+  background-image: conic-gradient(
+    blue calc(var(--multiply) * 40%), 
+    red calc(var(--multiply) * 40%), 
+    red calc(var(--multiply) * 70%), 
+    yellow calc(var(--multiply) * 70%), 
+    yellow calc(var(--multiply) * 90%), 
+    transparent calc(var(--multiply) * 90%)
+  );
+  border-radius: 50%;
+  filter: drop-shadow(10px 10px 10px #000);
+}</code></pre>
+
+<div id="css-animated-backgrounds" style="position: absolute; top: 0; right: 0; width: 400px; height: 400px; padding: 10px; background: #fff; border: 1px solid #000"><div></div></div>
+---
+Masking
+
+<style>
+#css-masks div {
+width: 100%;
+height: 100%;
+}
+</style>
+
+<pre><code class="liveCoding css" data-livecoding-id="css-masks" contenteditable>div {
+  animation: chart-open 1000ms infinite;
+  background-color: #ddd;
+  background-image: conic-gradient(
+    blue calc(var(--multiply) * 40%), 
+    red calc(var(--multiply) * 40%), 
+    red calc(var(--multiply) * 70%), 
+    yellow calc(var(--multiply) * 70%), 
+    yellow calc(var(--multiply) * 90%), 
+    transparent calc(var(--multiply) * 90%)
+  );
+  border-radius: 50%;
+}</code></pre>
+
+<div id="css-masks" style="position: absolute; top: 0; right: 0; width: 400px; height: 400px; padding: 10px; background: #fff; border: 1px solid #000"><div></div></div>
+---
+Build your own Instagram
+
+<pre><code class="liveCoding xml" data-livecoding-id="css-instagram" contenteditable>&lt;img src="images/captain-marvel-scene.jpg"&gt;</code></pre>
+
+<div class="flex-row">
+    
+    <pre><code class="liveCoding css" data-livecoding-id="css-instagram" contenteditable>img {
+}</code></pre>
+
+    <div id="css-instagram" style="width: 800px; padding: 10px; background: #fff; border: 1px solid #000"></div>
+</div>
 ---
 Make images fit [⚡](snippets/replace-imgs-with-divs.txt)
 
@@ -238,4 +337,32 @@ Art direction for Responsive Images
     <img src="images/thor.jpg" width="500" height="333">
   </div>
 </div>
+---
+## Parallax
+
+<style>
+#parallax div {
+width: 100%;
+height: 100%;
+}
+</style>
+
+<pre style="margin-left: 0"><code class="liveCoding xml" data-livecoding-id="parallax" contenteditable>&lt;div class="parallax"&gt;
+  &lt;div class="background"&gt;&lt;/div&gt;
+  &lt;div class="foreground"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+<pre style="margin-left: 0"><code class="liveCoding css" data-livecoding-id="parallax" contenteditable>.parallax {
+  position: relative; overflow-x: hidden; overflow-y: scroll;
+}
+.background {
+  background: center/cover url('images/parallax-city.jpg');
+}
+.foreground {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: center/cover url('images/parallax-iron-man.webp');
+}</code></pre>
+
+<div id="parallax" style="position: absolute; right: 0; top: 0; width: 600px; height: 1000px; padding: 10px; background: #fff; border: 1px solid #000"><div></div></div>
 

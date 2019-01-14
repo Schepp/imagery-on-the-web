@@ -1,0 +1,13 @@
+img {
+  display: grid;
+  font-size: 0;
+}
+img::after {
+  content: '\1F517 Broken Image showing ' attr(alt);
+  position: relative;
+  padding: 40px;
+  background: #ccc;
+  border: 5px dotted #333;
+  font-size: 60px;
+  text-align: center;
+}
