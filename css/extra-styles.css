@@ -320,3 +320,7 @@ body {
   .reveal .future #css-masks div {
     -webkit-animation-play-state: paused;
             animation-play-state: paused; }
+  .reveal div[id^="markup-"] img,
+  .reveal div[id^="markup-"] svg,
+  .reveal div[id^="markup-"] image {
+    vertical-align: bottom; }

@@ -192,7 +192,7 @@ Make images fit [⚡](snippets/replace-imgs-with-divs.txt)
 
 <div id="css-background-size" style="background: #fff; border: 1px solid #000"></div>
 ---
-Art direction via image focus
+Art direction via focal point
 
 <style>
 #css-image-focus {

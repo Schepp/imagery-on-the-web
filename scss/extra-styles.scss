@@ -374,4 +374,12 @@ body {
   .future #css-masks div {
     animation-play-state: paused;
   }
+
+  div[id^="markup-"] {
+    img,
+    svg,
+    image {
+      vertical-align: bottom;
+    }
+  }
 }
