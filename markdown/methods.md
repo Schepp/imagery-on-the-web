@@ -43,5 +43,21 @@ img.decode().then(function() {
   document.body.appendChild(img);
 });
 ```
+## Feature test
+
+The modern image format feature test
+
+```js
+const image = new Image();
+image.src = 'image.webp';
+image
+  .decode()
+  .then(() => {
+    console.info('Supports WebP');
+  })
+  .catch(() => {
+    console.warn('No WebP support');
+  });
+```
 ---
 &lt;/script&gt;
