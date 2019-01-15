@@ -1,3 +1,4 @@
+<br><br><br><br><br><br>
 # Image Formats
 ---
 <h2 class="image-grid-headline">Still Images</h2>

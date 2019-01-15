@@ -1,3 +1,4 @@
+<br><br><br><br><br><br>
 # Styling images & styling with Images
 ---
 ## The mysterious gap

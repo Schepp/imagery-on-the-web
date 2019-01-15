@@ -1,4 +1,5 @@
-# Methods
+<br><br><br><br><br><br>
+# JavaScript Methods
 ---
 ## Getting the current responsive SRC
 
