@@ -241,3 +241,4 @@ AV1 is the next generation video format
     <img src="images/explosion/explosion.gif">
 </picture>
 ```
+type="chapter/done"
