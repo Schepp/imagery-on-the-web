@@ -153,13 +153,34 @@ height: 100%;
 
 <div id="css-masks" style="position: absolute; top: 0; right: 0; width: 400px; height: 400px; padding: 10px; background: #fff; border: 1px solid #000"><div></div></div>
 ---
-Build your own Instagram
+## Build your own Instagram
 
-<pre><code class="liveCoding xml" data-livecoding-id="css-instagram" contenteditable>&lt;img src="images/captain-marvel-scene.jpg"&gt;</code></pre>
+<style>
+#css-instagram div,
+#css-instagram img {
+    display: block;
+    width: 100%;
+    vertical-align: bottom;
+}
+</style>
+
+<pre><code class="liveCoding xml" data-livecoding-id="css-instagram" contenteditable>&lt;div&gt;
+  &lt;img src="images/captain-marvel-scene.jpg"&gt;
+&lt;/div&gt;</code></pre>
 
 <div class="flex-row">
-    
-    <pre><code class="liveCoding css" data-livecoding-id="css-instagram" contenteditable>img {
+<pre><code class="liveCoding css" data-livecoding-id="css-instagram" contenteditable>div {
+  position: relative;
+}
+img {
+  filter: sepia(1);
+}
+div::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-image: radial-gradient(circle at center, #f000, #f00c);
+  mix-blend-mode: overlay;
 }</code></pre>
 
     <div id="css-instagram" style="width: 800px; padding: 10px; background: #fff; border: 1px solid #000"></div>
