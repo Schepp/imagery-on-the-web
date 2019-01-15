@@ -441,8 +441,10 @@ div {
 
 <div style="width: 600px; height: 400px; margin: 0 auto; padding: 10px; background: #fff; border: 1px solid #000"><canvas id="canvas"></canvas></div>
 ---
-## Inception!
+## Inception!   
 
 `-moz-element()`
+
+[Demo](https://codepen.io/iamvdo/pen/vOwaWz)
 ---
 .css {}
