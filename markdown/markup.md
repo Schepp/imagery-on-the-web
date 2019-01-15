@@ -131,5 +131,44 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
  <li class="fragment">`auto`: let the browser decide</li>
  <li class="fragment">_</li>
 </ul>
+
+<p class="fragment">IE 11 and Edge also supported a `lazyload` attribute with values `0` and `1`</p>
+---
+# Force lazyloading for all imgages
+
+Feature Policy Header
+
+`Feature Policy: lazyload 'self'(force)`
+
+---
+## Priority Hints
+
+Telling the browser which image to load first via `importance` attribute
+
+```html
+<img src="whatever.jpg" importance="low">
+<img src="hero.jpg" importance="high">
+<img src="whatever.jpg" importance="low">
+```
+
+<p class="fragment">Or, if it's super critical to your life and business, use a Resource Hint:<br>
+`<link rel="preload" href="hero.jpg" as="image">`</p>
+---
+## Non-blocking image decode
+
+`<img src="whatever.jpg" async="on">`
+
+<img src="images/image-decode.png" width="1200" height="394" style="width: 100%; height: auto">
+
+`on`: Waits for when the browser has capacity  
+`off`: Decodes the image right away, blocking the main thread 
+---
+## Hotlinking galore
+
+If you are the bad girl/guy and want to use someone else's image:
+
+`<img src="whatever.jpg" referrerpolicy="no-referrer">`
+
+<p class="fragment">(and also good for privacy)</p>
 ---
 # &lt;/html&gt;
