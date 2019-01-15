@@ -365,4 +365,56 @@ height: 100%;
 }</code></pre>
 
 <div id="parallax" style="position: absolute; right: 0; top: 0; width: 600px; height: 1000px; padding: 10px; background: #fff; border: 1px solid #000"><div></div></div>
+---
+## Slideshow
 
+<style>
+#slideshow div {
+  width: 800px; 
+  height: 400px;
+}
+</style>
+
+<pre style="margin-left: 0"><code class="js">CSS.registerProperty({
+  name: '--cross-fade',
+  syntax: '<number>',
+  inherits: false,
+  initialValue: '0'
+});</code></pre>
+
+<pre style="margin-left: 0"><code class="css">@keyframes cross-fade {
+  0% { --cross-fade: 0 }
+  50% { --cross-fade: 1 }
+  100% { --cross-fade: 0 }
+}
+.slideshow {
+  background-image: -webkit-cross-fade(
+    url('../images/iron-man.jpg'),
+    url('../images/hawkeye.jpg'),
+    calc(100% * var(--cross-fade)));
+  background-size: cover;
+  animation: cross-fade 10000ms infinite;
+}</code></pre>
+
+<div id="slideshow" style="position: absolute; right: 0; width: 820px; top: 250px; border: 10px solid #fff; background: #fff; outline: 1px solid #000"><div></div></div>
+---
+<!-- .slide: data-state="canvas" -->
+
+## Procedural backgrounds (Safari only)
+
+```js
+const ctx = document.getCSSCanvasContext('2d', 'snow', 1000, 1000);
+/* draw in the canvas */
+```
+
+```html
+<div></div>
+```
+
+```css
+div {
+  background-image: -webkit-canvas(snow);
+}
+```
+
+<div style="width: 600px; height: 400px; margin: 0 auto; padding: 10px; background: #fff; border: 1px solid #000"><canvas id="canvas"></canvas></div>

@@ -90,7 +90,7 @@
 </code></pre>
 
 <pre style="float: right; width: 55%"><code class="liveCoding xml" data-livecoding-id="markup-flexible" contenteditable>&lt;img src="https://satyr.io/
-1600x900?text=Flexible&delay=0"
+800x450?text=Flexible&delay=0"
   width="800"
   height="450"&gt;
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
