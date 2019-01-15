@@ -42,7 +42,7 @@
 ---
 ## Art direction
 
-<pre style="width: 60%; float: right"><code class="liveCoding xml" data-livecoding-id="markup-picture-3" contenteditable>&lt;picture&gt;
+<pre style="width: 75%; float: right"><code class="liveCoding xml" data-livecoding-id="markup-picture-3" contenteditable>&lt;picture&gt;
  &lt;source media="(max-width: 320px)" 
     srcset="images/black-widow-closeup.jpg 1x,
             images/black-widow-closeup2x.jpg 2x"&gt;
@@ -54,4 +54,24 @@
 
 <div class="resizable" style="position: absolute; top: 0; left: 0; width: 450px; height: 600px; margin: 0 auto; background: #fff; border: 10px solid #fff; outline: 1px solid #000">
 <iframe id="markup-picture-3" src="about:blank" style="width: 100%; height: 100%; padding: 0; overflow: hidden; border: none;" scrolling="no"></iframe>
+</div>
+---
+## Universal <br>resolution switching
+
+<pre style="width: 75%; float: right"><code class="liveCoding xml" data-livecoding-id="markup-picture-4" contenteditable>&lt;style&gt; img { width: 100vw }
+@media (min-width: 320px) {
+  img { width: 50vw }
+}&lt;/style&gt;    
+&lt;img src="https://satyr.io/900x1200?text=fallback" 
+    sizes="(min-width: 320px) 50vw, 100vw"
+    srcset="
+    https://satyr.io/300x400?text=300w 300w,
+    https://satyr.io/450x600?text=450w 450w,
+    https://satyr.io/600x800?text=600w 600w,
+    https://satyr.io/900x1200?text=900w 900w"&gt;
+
+</code></pre>
+
+<div class="resizable" style="position: absolute; top: 0; left: 0; width: 450px; height: 600px; margin: 0 auto; background: #fff; border: 10px solid #fff; outline: 1px solid #000">
+<iframe id="markup-picture-4" src="about:blank" style="width: 100%; height: 100%; padding: 0; overflow: hidden; border: none;" scrolling="no"></iframe>
 </div>
