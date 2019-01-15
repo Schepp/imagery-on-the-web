@@ -75,3 +75,25 @@
 <div class="resizable" style="position: absolute; top: 0; left: 0; width: 450px; height: 600px; margin: 0 auto; background: #fff; border: 10px solid #fff; outline: 1px solid #000">
 <iframe id="markup-picture-4" src="about:blank" style="width: 100%; height: 100%; padding: 0; overflow: hidden; border: none;" scrolling="no"></iframe>
 </div>
+---
+## Flexible images
+
+<style>
+#markup-flexible img {
+    max-width: none;
+}
+</style>
+
+<pre style="float: right; width: 55%"><code class="liveCoding css" data-livecoding-id="markup-flexible" contenteditable>img {
+  background-color: #333;
+}
+</code></pre>
+
+<pre style="float: right; width: 55%"><code class="liveCoding xml" data-livecoding-id="markup-flexible" contenteditable>&lt;img src="https://satyr.io/
+1600x900?text=Flexible&delay=0"
+  width="800"
+  height="450"&gt;
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+</code></pre>
+
+<div id="markup-flexible" class="resizable" style="position: absolute; left: 0; top: 150px; width: 820px; height: 820px; overflow: hidden; outline: 1px solid #000; background: #fff; border: 10px solid #fff; padding-bottom: 20px;"></div>
