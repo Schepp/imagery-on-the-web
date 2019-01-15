@@ -1,5 +1,26 @@
 # Markup
 ---
+## input[type="image"]
+
+```html
+<form action="images/raster.png" target="_blank">
+  <input type="image" 
+         src="images/raster.png"
+         width="600" height="600">
+</form>
+```
+
+<div style="display: inline-block; margin: 0 auto; padding: 10px; background: #fff; border: 1px solid #000">
+<form action="images/raster.png" target="_blank">
+  <input type="image" 
+         src="images/raster.png"
+         width="600"
+         height="600" 
+         style="vertical-align: bottom">
+</form>
+</div>
+
+---
 ## <image> Alias
 
 <pre><code class="liveCoding xml" data-livecoding-id="markup-alias" contenteditable>&lt;img src="images/batman-white.jpg"&gt;</code></pre>
@@ -98,3 +119,17 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 <div id="markup-flexible" class="resizable" style="position: absolute; left: 0; top: 150px; width: 820px; height: 820px; overflow: hidden; outline: 1px solid #000; background: #fff; border: 10px solid #fff; padding-bottom: 20px;"></div>
 ---
+## Native lazy-loading
+
+```html
+<img src="whatever.jpg" lazyload="on">
+```
+
+<ul>
+ <li class="fragment">`on`: defer fetching until content can be viewed</li>
+ <li class="fragment">`off`: fetch immediately</li>
+ <li class="fragment">`auto`: let the browser decide</li>
+ <li class="fragment">_</li>
+</ul>
+---
+# &lt;/html&gt;
