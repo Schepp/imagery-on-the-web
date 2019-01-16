@@ -139,7 +139,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 Feature Policy Header
 
-`Feature Policy: lazyload 'self'(force)`
+`Feature-Policy: lazyload 'self'(force)`
 
 ---
 ## Priority Hints

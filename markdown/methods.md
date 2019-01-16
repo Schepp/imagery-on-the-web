@@ -44,6 +44,7 @@ img.decode().then(function() {
   document.body.appendChild(img);
 });
 ```
+---
 ## Feature test
 
 The modern image format feature test
