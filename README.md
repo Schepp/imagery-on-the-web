@@ -1,8 +1,6 @@
 What I learned about Imagery on the Web
 ======
 
-![Cover Image](images/captain-america-shield.jpg)
-
 Talk Slides: [https://schepp.github.io/imagery-on-the-web/](https://schepp.github.io/imagery-on-the-web/)
 
 ---
