@@ -154,6 +154,7 @@ body {
     padding: 1rem 1.5rem;
     background-color: rgba(0, 0, 0, 0.9);
     font-style: italic;
+    font-size: 0.8em;
     text-align: left;
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); }
     .reveal blockquote p {
