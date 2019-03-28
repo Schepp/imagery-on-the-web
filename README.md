@@ -1,15 +1,13 @@
 What I learned about Imagery on the Web
 ======
 
-![Cover Image](images/captain-america-shield.jpg)
-
 Talk Slides: [https://schepp.github.io/imagery-on-the-web/](https://schepp.github.io/imagery-on-the-web/)
 
 ---
 
 Using images on a website is pretty straightforward, right? It's using an `<img>` element or a CSS background and then have them display a JPG, PNG or SVG. And that's it. Or is there more to it than that? Well, yes, there is. And it's a truckload full of possibilities. I'll take you on a trip starting with uncommon HTML markup, then looking at new image object methods, after which we're gonna a have a closer look at different file formats. And finally I'll cover a bunch of nice CSS tricks for generating and controlling imagery all without the help of JavaScript (or almost).
 
-> Christian Schaefer (https://twitter.com/derSchepp), known as "Schepp", is a freelance frontend developer from Düsseldorf. Instead of hacking around with JS-Frameworks as almost every other frontend developer currently does, he works on traditional server-rendered component-based systems, uses bleeding edge CSS, has an eye on accessibility and loading and rendering performance of a site. And then he also runs a meetup (https://www.meetup.com/Webworker-NRW/) and a podcast (https://workingdraft.de/).
+> Christian Schaefer (https://twitter.com/derSchepp), known as "Schepp", is a freelance frontend developer from Düsseldorf, Germany. Instead of hacking around with JS-Frameworks as almost every other frontend developer currently does, he works on traditional server-rendered component-based systems, uses bleeding edge CSS, has an eye on accessibility as well as the loading and runtime performance of a site. And then he also organizes a meetup (https://www.meetup.com/Webworker-NRW/) and co-hosts a podcast (https://workingdraft.de/).
 
 ---
 
