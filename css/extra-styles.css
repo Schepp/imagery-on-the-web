@@ -336,10 +336,12 @@ body {
   .reveal .future #css-masks div {
     -webkit-animation-play-state: paused;
             animation-play-state: paused; }
-  .reveal div[id^="markup-"] img,
-  .reveal div[id^="markup-"] svg,
-  .reveal div[id^="markup-"] image {
-    vertical-align: bottom; }
+  .reveal div[id^="markup-"] {
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif; }
+    .reveal div[id^="markup-"] img,
+    .reveal div[id^="markup-"] svg,
+    .reveal div[id^="markup-"] image {
+      vertical-align: bottom; }
   .reveal #slideshow div {
     background-image: -webkit-cross-fade(url("../images/iron-man.jpg"), url("../images/hawkeye.jpg"), calc(100% * var(--cross-fade)));
     background-size: cover;
