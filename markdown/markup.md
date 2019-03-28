@@ -22,9 +22,21 @@
 </div>
 
 ---
-## <image> Alias
+## &lt;image&gt; Alias
 
 <pre><code class="liveCoding xml" data-livecoding-id="markup-alias" contenteditable>&lt;img src="images/batman-white.jpg"&gt;</code></pre>
+
+<div id="markup-alias" style="max-width: 75%; padding: 10px; background: #fff; border: 1px solid #000"></div>
+---
+## &lt;image&gt; Alias
+
+> The obsolete HTML Image element (&lt;image&gt;) is an obsolete remnant of an ancient version of HTML lost in the mists of time;
+
+> In general, browsers will attempt to map this to <img>, but only if the src attribute is specified as well.  Creating an <image> element without a src attribute results in an HTMLElement object with the local element name "image". However, if the element is created with a src attribute, the result is instead an HTMLImageElement and its local element name is changed to "img".
+
+> However, that doesn't mean this is a good idea to use. It's not.
+
+[]MDN: <image>: The obsolete Image element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/image) 
 
 <div id="markup-alias" style="max-width: 75%; padding: 10px; background: #fff; border: 1px solid #000"></div>
 ---
