@@ -36,9 +36,7 @@
 
 > However, that doesn't mean this is a good idea to use. It's not.
 
-[]MDN: <image>: The obsolete Image element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/image) 
-
-<div id="markup-alias" style="max-width: 75%; padding: 10px; background: #fff; border: 1px solid #000"></div>
+[MDN: <image>: The obsolete Image element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/image) 
 ---
 ## Format switching back in the days...
 

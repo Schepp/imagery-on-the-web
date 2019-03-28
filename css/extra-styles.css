@@ -153,6 +153,7 @@ body {
     margin-bottom: 1rem;
     padding: 1rem 1.5rem;
     background-color: rgba(0, 0, 0, 0.9);
+    font-family: "Times New Roman", Times, serif;
     font-style: italic;
     text-align: left;
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); }
