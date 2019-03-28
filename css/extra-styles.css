@@ -159,6 +159,8 @@ body {
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); }
     .reveal blockquote p {
       font-family: "Times New Roman", Times, serif; }
+      .reveal blockquote p:first-letter {
+        font-size: 1.5em; }
     .reveal blockquote > *:last-child {
       margin-bottom: 0; }
     .reveal blockquote:before, .reveal blockquote:after {

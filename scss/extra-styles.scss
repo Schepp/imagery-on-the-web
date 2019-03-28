@@ -208,6 +208,10 @@ body {
 
     p {
       font-family: "Times New Roman", Times, serif;
+
+      &:first-letter {
+        font-size: 1.5em;
+      }
     }
 
     > *:last-child {
