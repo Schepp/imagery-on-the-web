@@ -207,6 +207,7 @@ AV1 is the next generation video format
 <ul>
   <li class="fragment">Backed by all of the browser vendors</li>
   <li class="fragment">40-50% better compression than H.264!</li>
+  <li class="fragment">Only supported by Chrome, not yet Safari 💩</li>
   <li class="fragment">_</li>
 </ul>
 ---

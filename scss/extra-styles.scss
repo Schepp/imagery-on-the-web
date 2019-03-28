@@ -202,7 +202,7 @@ body {
     padding: 1rem 1.5rem;
     background-color: rgba(0, 0, 0, .9);
     font-style: italic;
-    font-size: 0.8em;
+    font-size: 0.65em;
     text-align: left;
     box-shadow: 0 0 4px rgba(255, 255, 255, .5);
 
@@ -399,9 +399,14 @@ body {
     animation-play-state: paused;
   }
 
-  div[id^="markup-"] {
+  div[id^="markup-"],
+  div[id^="css-"] {
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+    color: #000;
+    text-shadow: none;
+  }
 
+  div[id^="markup-"] {
     img,
     svg,
     image {

@@ -360,7 +360,7 @@ Art direction for Responsive Images
   </div>
 </div>
 ---
-## Parallax
+## Parallax [⚡](snippets/parallax.txt)
 
 <style>
 #parallax div {

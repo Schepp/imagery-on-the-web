@@ -4,3 +4,8 @@ RewriteEngine on
 RewriteRule ^explosion\.mjpeg$ images/explosion/mjpeg/explosion.mjpeg.php [NC,L]
 </IfModule>
 
+<IfModule mod_expires.c>
+  ExpiresActive on
+
+  ExpiresDefault                          "access plus 0 second"
+</IfModule>
