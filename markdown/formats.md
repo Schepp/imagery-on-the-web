@@ -142,7 +142,7 @@ Motion-JPEG! Old, but gold.
 <pre><code class="xml">&lt;img src="http://localhost/
 imagery-on-the-web/explosion.mjpeg"&gt;</code></pre>
 
-<div id="format-mjpeg" class="comic-border"><img src="http://localhost/imagery-on-the-web/explosion.mjpeg" onerror="this.onerror='';this.src='http://www.der-schepp.de/mjpeg/explosion.mjpeg.php'"></div>
+<div id="format-mjpeg" class="comic-border"><img src="http://localhost/imagery-on-the-web/explosion.mjpeg"></div>
 ---
 Motion-JPEG is supported in every browser!
 
