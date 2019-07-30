@@ -38,6 +38,24 @@
 
 [MDN: &lt;image&gt;: The obsolete Image element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/image) 
 ---
+## The <del>alt-tag</del> alt-attribute
+
+> Except where otherwise specified, the alt attribute must be specified and its value must not be empty; the value must be an appropriate replacement for the image. The specific requirements for the alt attribute depend on what the image is intended to represent
+
+<a href="https://html5.validator.nu/?doc=http%3A%2F%2Fschepp.github.io%2Fimagery-on-the-web%2Fdemos%2Falt.html&showsource=yes" target="validator">Validator example</a>
+
+<a href="https://html5.validator.nu/?doc=http%3A%2F%2Fschepp.github.io%2Fimagery-on-the-web%2Fdemos%2Ftitle.html&showsource=yes" target="validator" class="fragment">A title-attribute works, too!</a>
+
+<a href="https://html5.validator.nu/?doc=http%3A%2F%2Fschepp.github.io%2Fimagery-on-the-web%2Fdemos%2Ffigcaption.html&showsource=yes" target="validator" class="fragment">as does &lt;figcaption&gt;</a>
+---
+## generator-unable-to-provide-required-alt
+
+> Markup generators may specify a <u>generator-unable-to-provide-required-alt</u> attribute on img elements for which they have been unable to obtain alternative text and for which they have therefore omitted the alt attribute. The value of this attribute must be the empty string. Documents containing such attributes are not conforming, but conformance checkers will silently ignore this error.
+
+<a href="https://html.spec.whatwg.org/multipage/images.html#guidance-for-conformance-checkers" target="_blank">WHATWG HTML Spec</a>
+
+<a href="https://html5.validator.nu/?doc=http%3A%2F%2Fschepp.github.io%2Fimagery-on-the-web%2Fdemos%2Fgenerator-unable-to-provide-required-alt.html&showsource=yes" target="validator" class="fragment">What does the validator say?</a>
+---
 ## Format switching back in the days...
 
 <pre><code class="liveCoding xml" data-livecoding-id="markup-svg-alias" contenteditable>&lt;svg width="450" height="600"&gt;
