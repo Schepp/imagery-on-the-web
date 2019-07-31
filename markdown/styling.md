@@ -369,7 +369,7 @@ height: 100%;
 }
 </style>
 
-<pre style="margin-left: 0"><code class="liveCoding xml" data-livecoding-id="parallax" contenteditable>&lt;div class="parallax"&gt;
+<pre style="margin-left: 0"><code class="liveCoding xml" data-livecoding-id="parallax">&lt;div class="parallax"&gt;
   &lt;div class="background"&gt;&lt;/div&gt;
   &lt;div class="foreground"&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>

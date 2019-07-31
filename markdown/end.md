@@ -6,4 +6,4 @@
 * Slides: [http://schepp.github.io/imagery-on-the-web/](http://schepp.github.io/imagery-on-the-web/)
 * Twitter: [@derSchepp](https://twitter.com/derSchepp) (English)
 * Podcast: [Working Draft](http://workingdraft.de) (German)
-* Meetup: [Webworker NRW](https://www.meetup.com/Webworker-NRW/) (Düsseldorf!!! 🙈)
+* Meetup: [Webworker NRW](https://www.meetup.com/Webworker-NRW/)
