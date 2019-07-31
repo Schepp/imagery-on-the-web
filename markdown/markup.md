@@ -22,20 +22,6 @@
 </div>
 
 ---
-## &lt;image&gt; Alias
-
-<pre><code class="liveCoding xml" data-livecoding-id="markup-alias" contenteditable>&lt;img src="images/batman-white.jpg"&gt;</code></pre>
-
-<div id="markup-alias" style="max-width: 75%; padding: 10px; background: #fff; border: 1px solid #000"></div>
----
-## &lt;image&gt; Alias
-
-> The HTML &lt;image&gt; element is an obsolete remnant of an ancient version of HTML lost in the mists of time;  
-In general, browsers will attempt to map this to &lt;img&gt;.  
-However, that doesn't mean this is a good idea to use. It's not.
-
-[MDN: &lt;image&gt;: The obsolete Image element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/image) 
----
 <!-- .slide: data-transition="none" -->
 ## The alt-tag
 ---
@@ -63,6 +49,20 @@ the value must be an appropriate replacement for the image.
 <a href="https://html.spec.whatwg.org/multipage/images.html#guidance-for-conformance-checkers" target="_blank">WHATWG HTML Spec</a>
 
 <a href="https://html5.validator.nu/?doc=http%3A%2F%2Fschepp.github.io%2Fimagery-on-the-web%2Fdemos%2Fgenerator-unable-to-provide-required-alt.html&showsource=yes" target="validator" class="fragment">What does the validator say?</a>
+---
+## &lt;image&gt; Alias
+
+<pre><code class="liveCoding xml" data-livecoding-id="markup-alias" contenteditable>&lt;img src="images/batman-white.jpg"&gt;</code></pre>
+
+<div id="markup-alias" style="max-width: 75%; padding: 10px; background: #fff; border: 1px solid #000"></div>
+---
+## &lt;image&gt; Alias
+
+> The HTML &lt;image&gt; element is an obsolete remnant of an ancient version of HTML lost in the mists of time;  
+In general, browsers will attempt to map this to &lt;img&gt;.  
+However, that doesn't mean this is a good idea to use. It's not.
+
+[MDN: &lt;image&gt;: The obsolete Image element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/image) 
 ---
 ## Format switching back in the days...
 
