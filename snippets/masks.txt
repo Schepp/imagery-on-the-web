@@ -1,0 +1,16 @@
+div {
+  animation: chart-open 1000ms infinite;
+  background-color: #ddd;
+  background-image: conic-gradient(
+    blue calc(var(--multiply) * 40%),
+    red calc(var(--multiply) * 40%),
+    red calc(var(--multiply) * 70%),
+    yellow calc(var(--multiply) * 70%),
+    yellow calc(var(--multiply) * 90%),
+    transparent calc(var(--multiply) * 90%)
+  );
+  border-radius: 50%;
+  /* clip-path: circle(140px at 50% 50%); */
+  -webkit-mask-image: radial-gradient(circle at center,
+    #0000 50%, #ffff 50%);
+}

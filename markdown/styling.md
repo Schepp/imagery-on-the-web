@@ -129,7 +129,7 @@ height: 100%;
 
 <div id="css-animated-backgrounds" style="position: absolute; top: 0; right: 0; width: 400px; height: 400px; padding: 10px; background: #fff; border: 1px solid #000"><div></div></div>
 ---
-Masking
+Masking  [⚡](snippets/masks.txt)
 
 <style>
 #css-masks div {
@@ -180,7 +180,8 @@ div::after {
   content: '';
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
-  background-image: radial-gradient(circle at center, #f000, #f00c);
+  background-image: radial-gradient(
+    circle at center, #f000, #f00c);
   mix-blend-mode: overlay;
 }</code></pre>
 
@@ -192,8 +193,8 @@ Make images fit [⚡](snippets/replace-imgs-with-divs.txt)
 <style>
 #css-background-size .flex {
   display: flex;
-  width: 40vw;
-  height: 30vh;
+  width: 70vw;
+  height: 70vh;
   border: 5px solid #fff;
 }
 #css-background-size .flex \> * {
@@ -212,7 +213,7 @@ Make images fit [⚡](snippets/replace-imgs-with-divs.txt)
 <pre><code class="liveCoding css" data-livecoding-id="css-background-size" contenteditable>* {
 }</code></pre>
 
-<div id="css-background-size" style="background: #fff; border: 1px solid #000"></div>
+<div id="css-background-size" style="position: absolute; right: 0; top: 200px; background: #fff; border: 1px solid #000"></div>
 ---
 Art direction via focal point
 

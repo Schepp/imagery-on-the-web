@@ -159,19 +159,19 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 ## Native lazy-loading
 
 ```html
-<img src="whatever.jpg" lazyload="on">
+<img src="whatever.jpg" loading="lazy">
 ```
 
 <ul>
- <li class="fragment">`on`: defer fetching until content can be viewed</li>
- <li class="fragment">`off`: fetch immediately</li>
+ <li class="fragment">`lazy`: defer fetching until content can be viewed</li>
+ <li class="fragment">`eager`: fetch immediately</li>
  <li class="fragment">`auto`: let the browser decide</li>
  <li class="fragment">_</li>
 </ul>
 
 <p class="fragment">IE 11 and Edge also supported a `lazyload` attribute with values `0` and `1`</p>
 ---
-# Force lazyloading for all imgages
+# Force lazyloading for all images
 
 Feature Policy Header
 
