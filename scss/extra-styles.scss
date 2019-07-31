@@ -64,7 +64,7 @@ body {
   }
 
   a:not(.image) {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 222, 0, 1);
   }
 
   pre {
@@ -198,16 +198,49 @@ body {
   blockquote {
     quotes: "“" "”" "‘" "’";
     position: relative;
-    margin-bottom: 1rem;
-    padding: 1rem 1.5rem;
-    background-color: rgba(0, 0, 0, .9);
-    font-style: italic;
+    margin-bottom: 3rem;
+    padding: 4rem;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    // font-family: 'Lobster', 'Times New Roman', Times, serif;
     font-size: 0.65em;
-    text-align: left;
-    box-shadow: 0 0 4px rgba(255, 255, 255, .5);
+    line-height: 1.4;
+    font-style: normal;
+    text-align: center;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 1));
+    text-shadow: none;
+
+    &:before,
+    p:before {
+      content: '';
+      width: 25%;
+      height: 350px;
+    }
+
+    &:before {
+      float: left;
+      shape-outside: polygon(0 0, 100% 0, 0 50%, 100% 100%, 0 100%);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -50px;
+      left: 60%;
+      border: 70px solid #fff;
+      border-color: #fff transparent transparent #fff;
+    }
 
     p {
-      font-family: "Times New Roman", Times, serif;
+      display: inline !important;
+      color: inherit;
+      font-family: inherit;
+
+      &:before {
+        float: right;
+        shape-outside: polygon(100% 0, 0 0, 100% 50%, 0 100%, 100% 100%);
+      }
 
       &:first-letter {
         font-size: 1.5em;
@@ -218,25 +251,8 @@ body {
       margin-bottom: 0;
     }
 
-    &:before,
-    &:after {
-      position: absolute;
-      font-family: Times, serif;
-      font-size: 150%;
-      font-weight: bold;
-    }
-
-    &:before {
-      top: 0;
-      right: 102%;
-      content: open-quote;
-    }
-
-    &:after {
-      bottom: -20px;
-      left: 102%;
-      content: close-quote;
-      vertical-align: bottom;
+    br {
+      line-height: 2;
     }
   }
 

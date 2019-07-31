@@ -30,19 +30,27 @@
 ---
 ## &lt;image&gt; Alias
 
-> The obsolete HTML Image element (&lt;image&gt;) is an obsolete remnant of an ancient version of HTML lost in the mists of time;
-
-> In general, browsers will attempt to map this to &lt;img&gt;, but only if the src attribute is specified as well. Creating an &lt;image&gt; element without a src attribute results in an HTMLElement object with the local element name "image". However, if the element is created with a src attribute, the result is instead an HTMLImageElement and its local element name is changed to "img".
-
-> However, that doesn't mean this is a good idea to use. It's not.
+> The HTML &lt;image&gt; element is an obsolete remnant of an ancient version of HTML lost in the mists of time;  
+In general, browsers will attempt to map this to &lt;img&gt;.  
+However, that doesn't mean this is a good idea to use. It's not.
 
 [MDN: &lt;image&gt;: The obsolete Image element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/image) 
 ---
+<!-- .slide: data-transition="none" -->
+## The alt-tag
+---
+<!-- .slide: data-transition="none" -->
+## The <del>alt-tag</del> alt-attribute
+---
+<!-- .slide: data-transition="none" -->
 ## The <del>alt-tag</del> alt-attribute
 
-> Except where otherwise specified, the alt attribute must be specified and its value must not be empty; the value must be an appropriate replacement for the image. The specific requirements for the alt attribute depend on what the image is intended to represent
+> Except where otherwise specified, the alt attribute must be specified and its value must not be empty;  
+the value must be an appropriate replacement for the image.
 
-<a href="https://html5.validator.nu/?doc=http%3A%2F%2Fschepp.github.io%2Fimagery-on-the-web%2Fdemos%2Falt.html&showsource=yes" target="validator">Validator example</a>
+[W3C HTML5 Spec](https://www.w3.org/TR/2011/WD-html5-author-20110809/the-img-element.html#alt)
+
+<a href="https://html5.validator.nu/?doc=http%3A%2F%2Fschepp.github.io%2Fimagery-on-the-web%2Fdemos%2Falt.html&showsource=yes" target="validator" class="fragment">Validator example</a>
 
 <a href="https://html5.validator.nu/?doc=http%3A%2F%2Fschepp.github.io%2Fimagery-on-the-web%2Fdemos%2Ftitle.html&showsource=yes" target="validator" class="fragment">A title-attribute works, too!</a>
 
@@ -50,7 +58,7 @@
 ---
 ## generator-unable-to-provide-required-alt
 
-> Markup generators may specify a <u>generator-unable-to-provide-required-alt</u> attribute on img elements for which they have been unable to obtain alternative text and for which they have therefore omitted the alt attribute. The value of this attribute must be the empty string. Documents containing such attributes are not conforming, but conformance checkers will silently ignore this error.
+> Markup generators may specify a <u>generator-unable-to-provide-required-alt</u> attribute on img elements for which they have been unable to obtain alternative text and for which they have therefore omitted the alt attribute.
 
 <a href="https://html.spec.whatwg.org/multipage/images.html#guidance-for-conformance-checkers" target="_blank">WHATWG HTML Spec</a>
 

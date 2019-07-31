@@ -59,7 +59,7 @@ body {
     line-height: 1.25;
     text-shadow: inherit; }
   .reveal a:not(.image) {
-    color: rgba(255, 255, 255, 0.8); }
+    color: #ffde00; }
   .reveal pre {
     box-shadow: none;
     font-size: inherit;
@@ -150,33 +150,48 @@ body {
   .reveal blockquote {
     quotes: "“" "”" "‘" "’";
     position: relative;
-    margin-bottom: 1rem;
-    padding: 1rem 1.5rem;
-    background-color: rgba(0, 0, 0, 0.9);
-    font-style: italic;
+    margin-bottom: 3rem;
+    padding: 4rem;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
     font-size: 0.65em;
-    text-align: left;
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); }
+    line-height: 1.4;
+    font-style: normal;
+    text-align: center;
+    -webkit-filter: drop-shadow(0 0 2px black);
+            filter: drop-shadow(0 0 2px black);
+    text-shadow: none; }
+    .reveal blockquote:before,
+    .reveal blockquote p:before {
+      content: '';
+      width: 25%;
+      height: 350px; }
+    .reveal blockquote:before {
+      float: left;
+      -webkit-shape-outside: polygon(0 0, 100% 0, 0 50%, 100% 100%, 0 100%);
+              shape-outside: polygon(0 0, 100% 0, 0 50%, 100% 100%, 0 100%); }
+    .reveal blockquote:after {
+      content: '';
+      position: absolute;
+      bottom: -50px;
+      left: 60%;
+      border: 70px solid #fff;
+      border-color: #fff transparent transparent #fff; }
     .reveal blockquote p {
-      font-family: "Times New Roman", Times, serif; }
+      display: inline !important;
+      color: inherit;
+      font-family: inherit; }
+      .reveal blockquote p:before {
+        float: right;
+        -webkit-shape-outside: polygon(100% 0, 0 0, 100% 50%, 0 100%, 100% 100%);
+                shape-outside: polygon(100% 0, 0 0, 100% 50%, 0 100%, 100% 100%); }
       .reveal blockquote p:first-letter {
         font-size: 1.5em; }
     .reveal blockquote > *:last-child {
       margin-bottom: 0; }
-    .reveal blockquote:before, .reveal blockquote:after {
-      position: absolute;
-      font-family: Times, serif;
-      font-size: 150%;
-      font-weight: bold; }
-    .reveal blockquote:before {
-      top: 0;
-      right: 102%;
-      content: open-quote; }
-    .reveal blockquote:after {
-      bottom: -20px;
-      left: 102%;
-      content: close-quote;
-      vertical-align: bottom; }
+    .reveal blockquote br {
+      line-height: 2; }
   .reveal .inline-row > div, .reveal .inline-row img, .reveal .inline-row pre {
     display: inline-block;
     vertical-align: top; }
